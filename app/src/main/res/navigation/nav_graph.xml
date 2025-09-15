@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.maze.main.SignUpFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/signup_fragment">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.maze.main.HomeFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.maze.main.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_setting" >
+
+        <action
+            android:id="@+id/action_setting_violation_to_violationInfo"
+            app:destination="@id/violation_info" />
+
+        <action
+            android:id="@+id/action_settingsFragment_to_reportAvailability"
+            app:destination="@id/reportAvailability" />
+        <action
+            android:id="@+id/action_settingsFragment_to_reportViolation"
+            app:destination="@id/reportViolation" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportAvailability"
+        android:name="com.maze.main.settings.ReportAvailability"
+        android:label="fragment_report_availability"
+        tools:layout="@layout/fragment_report_availability" >
+        <action
+            android:id="@+id/action_reportAvailability_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/violation_info"
+        android:name="com.maze.main.settings.ViolationInfoFragment"
+        android:label="Violation Information"
+        tools:layout="@layout/violation_info" >
+    </fragment>
+    <fragment
+        android:id="@+id/reportViolation"
+        android:name="com.maze.main.settings.ReportViolation"
+        android:label="ReportViolation" >
+        <action
+            android:id="@+id/action_reportViolation_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.maze.main.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>
