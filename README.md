@@ -62,9 +62,9 @@ Maze is your **parking co-pilot** inspired by Waze (but for when you’re parked
 ---
 
 ## 📸 Screenshots
-<img width="308" height="522" alt="alerts screen" src="https://github.com/user-attachments/assets/9f30044a-a0a6-4f78-a47f-33eed0cf593d" />
-<img width="308" height="520" alt="report violation screen" src="https://github.com/user-attachments/assets/6097df6b-cf8a-4818-9ca5-0da8c5f72143" />
-<img width="312" height="533" alt="setting screen 2" src="https://github.com/user-attachments/assets/36e06236-cb1d-4754-8e88-9836dbcf0742" />
+<img width="208" height="522" alt="alerts screen" src="https://github.com/user-attachments/assets/9f30044a-a0a6-4f78-a47f-33eed0cf593d" />
+<img width="208" height="520" alt="report violation screen" src="https://github.com/user-attachments/assets/6097df6b-cf8a-4818-9ca5-0da8c5f72143" />
+<img width="212" height="533" alt="setting screen 2" src="https://github.com/user-attachments/assets/36e06236-cb1d-4754-8e88-9836dbcf0742" />
 
 ---
 
